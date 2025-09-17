@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FITCORE - Modern Athleisure</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="fc-body">
+
+  <!-- Header -->
+  <header class="fc-header">
+    <div class="fc-header-container">
+      <div class="fc-header-inner">
+        <div class="fc-search-bar">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Search..." class="fc-search-input">
+        </div>
+
+        <button class="fc-logo" aria-label="Home" onclick="location.href='index.html'">
+          FITCORE
+        </button>
+
+        <div class="fc-header-actions">
+          <button class="fc-icon-btn" aria-label="Shopping Cart">
+            <i class="fas fa-shopping-cart"></i>
+          </button>
+          <button class="fc-icon-btn" aria-label="Wishlist" onclick="location.href='wishlist.html'">
+            <i class="fas fa-heart"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="fc-hero" style="background-image: url('FITCORE 22.06.14/Sweet moment.jpg')">
+    <div class="fc-hero-overlay"></div>
+    <div class="fc-hero-content">
+      <h1 class="fc-hero-title">Athleisure</h1>
+      <p class="fc-hero-subtitle">Training Dept.</p>
+      <button class="fc-hero-btn" onclick="location.href='#products'">Shop Now</button>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="fc-main" id="products">
+    <section class="fc-product-section">
+      <div class="fc-product-grid">
+
+        <!-- Product Card Example -->
+        <div class="fc-product-card">
+          <div class="fc-product-image-wrapper">
+            <div class="fc-image-container">
+              <img src="FITCORE 22.06.14/Copy of DSC02262 4.JPG" class="fc-product-image" alt="Athleisure T-shirt">
+              <img src="FITCORE 22.06.14/Copy of DSC02284 2.JPG" class="fc-hover-image" alt="Athleisure T-shirt hover">
+            </div>
+          </div>
+
+          <div class="fc-product-info">
+            <h3 class="fc-product-title">ATHLEISURE T-SHIRT</h3>
+
+            <div class="fc-option-group">
+              <p class="fc-option-label">Color:</p>
+              <div class="fc-options">
+                <button class="fc-option-btn selected" data-group="color" data-value="Black">Black</button>
+                <button class="fc-option-btn" data-group="color" data-value="Charcoal Grey">Charcoal Grey</button>
+              </div>
+            </div>
+
+            <div class="fc-option-group">
+              <p class="fc-option-label">Size:</p>
+              <div class="fc-options">
+                <button class="fc-option-btn selected" data-group="size" data-value="M">M</button>
+                <button class="fc-option-btn" data-group="size" data-value="L">L</button>
+                <button class="fc-option-btn" data-group="size" data-value="XL">XL</button>
+              </div>
+            </div>
+
+            <p class="fc-product-price">Rs. 1599/-</p>
+
+            <div class="fc-quantity-selector">
+              <button class="fc-qty-btn fc-qty-minus">-</button>
+              <span class="fc-qty-value">1</span>
+              <button class="fc-qty-btn fc-qty-plus">+</button>
+            </div>
+
+            <button class="fc-add-to-cart">Add To Cart</button>
+          </div>
+        </div>
+        <div class="fc-product-card">
+          <div class="fc-product-image-wrapper">
+            <div class="fc-image-container">
+              <img src="FITCORE 22.06.14/DSC01634.JPG" class="fc-product-image" alt="Athleisure T-shirt">
+              <img src="FITCORE 22.06.14/DSC01642.JPG" class="fc-hover-image" alt="Athleisure T-shirt hover">
+            </div>
+          </div>
+
+          <div class="fc-product-info">
+            <h3 class="fc-product-title">Athleisure Tank</h3>
+
+            <div class="fc-option-group">
+              <p class="fc-option-label">Color:</p>
+              <div class="fc-options">
+                <button class="fc-option-btn selected" data-group="color" data-value="Black">Black</button>
+                <button class="fc-option-btn" data-group="color" data-value="Charcoal Grey">White</button>
+              </div>
+            </div>
+
+            <div class="fc-option-group">
+              <p class="fc-option-label">Size:</p>
+              <div class="fc-options">
+                <button class="fc-option-btn selected" data-group="size" data-value="M">M</button>
+                <button class="fc-option-btn" data-group="size" data-value="L">L</button>
+              </div>
+            </div>
+
+            <p class="fc-product-price">Rs. 1299/-</p>
+
+            <div class="fc-quantity-selector">
+              <button class="fc-qty-btn fc-qty-minus">-</button>
+              <span class="fc-qty-value">1</span>
+              <button class="fc-qty-btn fc-qty-plus">+</button>
+            </div>
+
+            <button class="fc-add-to-cart">Add To Cart</button>
+          </div>
+        </div>
+        <div class="fc-product-card">
+          <div class="fc-product-image-wrapper">
+            <div class="fc-image-container">
+              <img src="FITCORE 22.06.14/Oversized Long Sleeve Tee (1).JPG" class="fc-product-image" alt="Athleisure T-shirt">
+              <img src="FITCORE 22.06.14/Oversized Long Sleeve Tee.JPG" class="fc-hover-image" alt="Athleisure T-shirt hover">
+            </div>
+          </div>
+
+          <div class="fc-product-info">
+            <h3 class="fc-product-title">Long Sleeve Tee</h3>
+
+            <div class="fc-option-group">
+              <p class="fc-option-label">Color:</p>
+              <div class="fc-options">
+                <button class="fc-option-btn selected" data-group="color" data-value="Black">Black</button>
+                <button class="fc-option-btn" data-group="color" data-value="Charcoal Grey">Charcoal Grey</button>
+              </div>
+            </div>
+
+            <div class="fc-option-group">
+              <p class="fc-option-label">Size:</p>
+              <div class="fc-options">
+                <button class="fc-option-btn selected" data-group="size" data-value="M">M</button>
+                <button class="fc-option-btn" data-group="size" data-value="L">L</button>
+                <button class="fc-option-btn" data-group="size" data-value="XL">XL</button>
+              </div>
+            </div>
+
+            <p class="fc-product-price">Rs. 1999/-</p>
+
+            <div class="fc-quantity-selector">
+              <button class="fc-qty-btn fc-qty-minus">-</button>
+              <span class="fc-qty-value">1</span>
+              <button class="fc-qty-btn fc-qty-plus">+</button>
+            </div>
+
+            <button class="fc-add-to-cart">Add To Cart</button>
+          </div>
+        </div>
+        <div class="fc-product-card">
+          <div class="fc-product-image-wrapper">
+            <div class="fc-image-container">
+              <img src="FITCORE 22.06.14/DSC01656.JPG" class="fc-product-image" alt="Athleisure T-shirt">
+              <img src="FITCORE 22.06.14/DSC01622 2.JPG" class="fc-hover-image" alt="Athleisure T-shirt hover">
+            </div>
+          </div>
+
+          <div class="fc-product-info">
+            <h3 class="fc-product-title">Oversized T-shirt</h3>
+
+            <div class="fc-option-group">
+              <p class="fc-option-label">Color:</p>
+              <div class="fc-options">
+                <button class="fc-option-btn selected" data-group="color" data-value="Black">Black</button>
+                <button class="fc-option-btn" data-group="color" data-value="Charcoal Grey">White</button>
+              </div>
+            </div>
+
+            <div class="fc-option-group">
+              <p class="fc-option-label">Size:</p>
+              <div class="fc-options">
+                <button class="fc-option-btn selected" data-group="size" data-value="M">M</button>
+                <button class="fc-option-btn" data-group="size" data-value="L">L</button>
+                <button class="fc-option-btn" data-group="size" data-value="XL">XL</button>
+              </div>
+            </div>
+
+            <p class="fc-product-price">Rs. 1699/-</p>
+
+            <div class="fc-quantity-selector">
+              <button class="fc-qty-btn fc-qty-minus">-</button>
+              <span class="fc-qty-value">1</span>
+              <button class="fc-qty-btn fc-qty-plus">+</button>
+            </div>
+
+            <button class="fc-add-to-cart">Add To Cart</button>
+          </div>
+        </div>
+        <div class="fc-product-card">
+          <div class="fc-product-image-wrapper">
+            <div class="fc-image-container">
+              <img src="FITCORE 22.06.14/DSC02227-fotor-2025051219198.JPG" class="fc-product-image" alt="Athleisure T-shirt">
+              <img src="FITCORE 22.06.14/DSC02150-fotor-20250512191551 2.JPG" class="fc-hover-image" alt="Athleisure T-shirt hover">
+            </div>
+          </div>
+
+          <div class="fc-product-info">
+            <h3 class="fc-product-title">Athleisure Shorts</h3>
+
+            <div class="fc-option-group">
+              <p class="fc-option-label">Color:</p>
+              <div class="fc-options">
+                <button class="fc-option-btn selected" data-group="color" data-value="Black">Black</button>
+              </div>
+            </div>
+
+            <div class="fc-option-group">
+              <p class="fc-option-label">Size:</p>
+              <div class="fc-options">
+                <button class="fc-option-btn selected" data-group="size" data-value="M">M</button>
+                <button class="fc-option-btn" data-group="size" data-value="L">L</button>
+                <button class="fc-option-btn" data-group="size" data-value="XL">XL</button>
+              </div>
+            </div>
+
+            <p class="fc-product-price">Rs. 849/-</p>
+
+            <div class="fc-quantity-selector">
+              <button class="fc-qty-btn fc-qty-minus">-</button>
+              <span class="fc-qty-value">1</span>
+              <button class="fc-qty-btn fc-qty-plus">+</button>
+            </div>
+
+            <button class="fc-add-to-cart">Add To Cart</button>
+          </div>
+        </div>
+        
+
+        <!-- Duplicate .fc-product-card for more products -->
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="fc-footer">
+    <div class="fc-footer-container">
+      <div class="fc-footer-grid">
+        <div>
+          <h4 class="fc-footer-title">Category</h4>
+          <a href="#" class="fc-footer-link">Products</a>
+          <a href="#" class="fc-footer-link">Bestsellers</a>
+        </div>
+        <div>
+          <h4 class="fc-footer-title">Pages</h4>
+          <a href="#" class="fc-footer-link">About Us</a>
+          <a href="wishlist.html" class="fc-footer-link">Wishlist</a>
+        </div>
+        <div>
+          <h4 class="fc-footer-title">Legals</h4>
+          <a href="#" class="fc-footer-link">Shipping Policy</a>
+          <a href="#" class="fc-footer-link">Refund Policy</a>
+          <a href="#" class="fc-footer-link">Privacy Policy</a>
+          <a href="#" class="fc-footer-link">Terms of Service</a>
+        </div>
+        <div>
+          <h4 class="fc-footer-title">Socials</h4>
+          <a href="https://www.instagram.com/fitcoreathleisure" class="fc-footer-link" target="_blank">Instagram</a>
+          <a href="#" class="fc-footer-link">Gmail</a>
+        </div>
+      </div>
+
+      <div class="fc-footer-bottom">© 2024 FITCORE. All Rights Reserved.</div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div id="toast-notification" class="fc-toast hidden">Item added to cart!</div>
+
+  <!-- Shared JS -->
+  <script src="script.js"></script>
+</body>
+</html>

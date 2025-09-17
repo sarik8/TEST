@@ -1,0 +1,113 @@
+<html>
+<head>
+  <title>FITCORE - Checkout</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <div class="logo">FITCORE</div>
+
+    <div class="back">
+      <a href="index.html">← CHECKOUT</a>
+    </div>
+
+    <div class="main">
+
+      <!-- Left Side -->
+      <div class="left">
+        <form id="form">
+
+          <div class="box">
+            <p class="title">YOUR INFO</p>
+            <div class="row">
+              <div class="col">
+                <label class="lbl">NAME</label>
+                <input type="text" id="name" class="input">
+              </div>
+              <div class="col">
+                <label class="lbl">EMAIL</label>
+                <input type="email" id="email" class="input">
+              </div>
+              <div class="col full">
+                <label class="lbl">PHONE</label>
+                <input type="tel" id="phone" class="input">
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <label class="lbl">ORDER NOTE</label>
+            <textarea id="note" rows="3" class="input"></textarea>
+          </div>
+
+          <div class="box">
+            <p class="title">ADDRESS</p>
+            <div class="row">
+              <div class="col">
+                <label class="lbl">ADDRESS</label>
+                <input type="text" id="addr" class="input">
+              </div>
+              <div class="col">
+                <label class="lbl">LOCATION</label>
+                <input type="text" id="loc" class="input">
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <p class="title">PAYMENT</p>
+            <div class="row">
+              <div id="codBox" class="pay selected">
+                <input type="radio" name="pay" id="cod" value="cod" checked hidden>
+                CASH ON DELIVERY
+              </div>
+              <div id="qrBox" class="pay">
+                <input type="radio" name="pay" id="qr" value="qr" hidden>
+                QR PAYMENT
+              </div>
+            </div>
+          </div>
+
+        </form>
+      </div>
+
+      <!-- Right Side -->
+      <div class="right">
+        <div class="order">
+          <p class="title">ORDER</p>
+
+          <div class="prod">
+            <img id="oImg" class="img">
+            <div class="info">
+              <p id="oName" class="pname"></p>
+              <p>Color: <span id="oColor"></span> | Size: <span id="oSize"></span></p>
+            </div>
+            <p>Qty: <span id="oQty"></span></p>
+          </div>
+
+          <p id="oPrice" class="price"></p>
+
+          <hr>
+          <div class="line"><p>Subtotal</p><p id="oSub"></p></div>
+          <div class="line"><p>Shipping</p><p>Free</p></div>
+          <hr>
+          <div class="line total"><p>Total</p><p id="oTotal"></p></div>
+
+          <p id="msg" class="msg"></p>
+
+          <button type="submit" form="form" class="btn">PLACE ORDER</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
